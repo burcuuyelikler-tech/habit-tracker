@@ -1,0 +1,39 @@
+:root {
+  --bg: #0F0D0A;
+  --card: rgba(255,255,255,0.02);
+  --border: rgba(255,255,255,0.06);
+  --gold: #C9A96E;
+  --gold-dim: rgba(201,169,110,0.12);
+  --text: #E8DCC8;
+  --sub: #998E7E;
+  --dim: #665e52;
+  --danger: #E85D5D;
+  --green: #7A9E7E;
+  --font: 'DM Sans', sans-serif;
+  --serif: 'Cormorant Garamond', serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: rgba(201,169,110,0.2); border-radius: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+input, select, textarea {
+  width: 100%; padding: 10px 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,169,110,0.12);
+  border-radius: 10px; color: var(--text);
+  font-size: 14px; font-family: var(--font);
+  outline: none; transition: border-color 0.2s;
+}
+input:focus, select:focus, textarea:focus { border-color: rgba(201,169,110,0.4); }
+select { background: #1A1814; }
+textarea { resize: vertical; min-height: 60px; }
+
+button { cursor: pointer; font-family: var(--font); }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
